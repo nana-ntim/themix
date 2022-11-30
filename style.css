@@ -144,7 +144,7 @@ body{
     display: block;
 }
 
-.call-to-action{
+.hero-button{
     font-family: 'Space Grotesk', sans-serif;
     font-weight: 700;
     color: #242424;
@@ -213,16 +213,137 @@ body{
 }
 
 .meet-the-team{
+    width: 100%;
+    color: var(--general-color);
+    display: flex;
     height: 48.1rem;
 }
 
+.employee-image-container{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.employee-data{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.background-layer{
+    z-index: 10;
+    position: absolute;
+    background-color: white;
+    width: 23rem;
+    height: 23rem;
+}
+
+.employee-image{
+    z-index: 11;
+    background-image: url(assets/employee.jpg);
+    background-position: center center;
+    background-size: cover;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+    width: 23rem;
+    height: 23rem;
+}
+
+.employee-data-title{
+    font-family: 'Krona One', sans-serif;
+    margin-bottom: 0.4rem;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.employee-data-title-span{
+    display: block;
+    font-family: 'Krona One', sans-serif;
+    color: #F3F3B0;
+}
+
+.employee-data-description{
+    font-weight: 100;
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+.data-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--general-color);
+    width: 25rem;
+    text-align: center;
+}
+
+.mobile-employee-container{
+    display: none;
+}
+
+
+/* Footer Section */
+
+footer.footer{
+    border-top: 1px solid white;
+    height: 15rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+img.themixlogo{
+    width: 9rem;
+}
+
+.footer-item a{
+    font-weight: 300;
+    color: white;
+}
+
+.footer-item{
+    margin-bottom: 0.8rem;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.footer-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-batch{
+    margin: 1rem;
+    width: auto;
+}
+
+.creator-tag{
+    color: white;
+    font-weight: 200;
+}
+
+.creator-tag a{
+    font-weight: 600;
+    color: white;
+}
+
+/* End Of Footer Section */
 
 @media (max-width: 1250px) and (min-width: 1050px) {
     .hero-title{
         font-size: 5rem;
         margin-right: 5rem;
         line-height: 5rem;
+    }
+
+    footer.footer{
+        height: 25rem;
+        flex-direction: column;
     }
 }
 
@@ -248,19 +369,8 @@ body{
         justify-content:  center;
         align-items: center;
         height: auto;
-        background-color: red;
         position: absolute;
-        margin-top: 5rem;
-
-        /* z-index: 8;
-        display: flex;
-        flex-direction: column;
-        justify-content:  center;
-        align-items: flex-end;
-        margin-top: 0rem;
-        width: 100%;
-        height: 20rem;
-        position: absolute; */
+        margin-top: 6rem;
     }
 
     .top-image{
@@ -273,16 +383,19 @@ body{
         justify-content:  center;
         align-items:center;
         width: 100%;
-        margin-top: 15rem;
+        margin-top: 16rem;
         margin-right: 0rem;
-        height: 15rem;
-        line-height: 4.5rem;
+        line-height: 4rem;
         font-size: 4rem;
     }
 
     .hero-title-span{
         display: block;
-        margin-bottom: 2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .hero-button{
+        margin-bottom: 4rem;
     }
 
     .top-image-flex-container{
@@ -361,5 +474,81 @@ body{
         font-size: 1.25rem;
         line-height: 1.7rem;
     }
+
+    footer.footer{
+        height: 25rem;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 950px) {
+    
+    .employee-image-container{
+        display: none;
+    }
+    
+    .employee-data{
+        display: none;
+    }
+    
+    .background-layer{
+        display: none;
+    }
+    
+    .employee-image{
+        display: none;
+    }
+    
+    .employee-data-title{
+        display: none;
+    }
+    
+    .employee-data-title-span{
+        display: none;
+    }
+    
+    .employee-data-description{
+        display: none;
+    }
+    
+    .data-container{
+        display: none;
+    }
+
+    .mobile-employee-container{
+        width: 100%;
+        height: 48.1rem;
+        display: flex;
+        justify-content:center;
+        align-items:center;
+        flex-direction: column;
+    }
+
+    .mobile-background-layer{
+        z-index: 10;
+        position: absolute;
+        background-color: white;
+        width: 18rem;
+        height: 18rem;
+    }
+    
+    .mobile-employee-image{
+        z-index: 14;
+        background-image: url(assets/employee.jpg);
+        background-position: center center;
+        background-size: cover;
+        margin-bottom: 2rem;
+        margin-left: 2rem;
+        width: 18rem;
+        height: 18rem;
+    }
+
+    .mobile-employee-image-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
 }
 

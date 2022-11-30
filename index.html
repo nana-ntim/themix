@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Mix Restaurant</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="assets/themixlogo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/themixlogo.jpg" type="image/x-icon">
 </head>
 <body>
 
@@ -38,7 +38,9 @@
         </div>
         <div class="title-container">
             <h1 class="hero-title">Discover <span class="hero-title-span"> Variety</span>
-            <button class="call-to-action">Check Our Menu</button></h1>
+            <a href="menu/menu.html" class="hero-button-link">
+                <button class="hero-button">Check Our Menu</button></h1>
+            </a>
         </div>
     </main>
     <!-- End Of Hero Section -->
@@ -63,7 +65,36 @@
 
     <!-- Meet The Team Section -->
     <section class="meet-the-team">
+        <!-- Desktop Display -->
+        <div class="employee-image-container">
+            <div class="background-layer"></div>
+            <div class="employee-image"></div>
+        </div>
+        <div class="employee-data">
+            <div class="data-container">
+                <h1 class="employee-data-title">
+                    Meet The <span class="employee-data-title-span">Team</span>
+                </h1>
+                <div class="line"></div>
+                <p class="employee-data-description">
+                    Run by a dynamic team of young talent from West Africa, the focus is to utilise locally-sourced ingredients promoting sustainability and Ghanaian entrepreneurship through food and mixology.
+                </p>
+            </div>
+        </div>
+        <!-- End Of Desktop Display -->
 
+        <!-- Mobile Display -->
+        <div class="mobile-employee-container">
+            <h1 class="mobile-employee-data-title">
+                Meet The <span class="mobile-employee-data-title-span">Team</span>
+            </h1>
+            <div class="mobile-line"></div>
+            <div class="mobile-employee-image-container">
+                <div class="mobile-employee-image"></div>
+                <div class="mobile-background-layer"></div>
+            </div>
+        </div>
+        <!-- End Of Mobile Display -->
     </section>
     <!-- End Of Meet The Team Section -->
 
@@ -73,13 +104,22 @@
     </section>
     <!-- End Of International Section -->
 
-
-
-
-
-    <footer class="footer-section">
-
+    <!-- Footer -->
+    <footer class="footer">
+        <img src="assets/themixlogo.jpg" alt="" class="themixlogo">
+        <div class="footer-links">
+            <div class="footer-batch">
+                <li class="footer-item"><a href="#" class="footer-link">Home</a></li>
+                <li class="footer-item"><a href="#" class="footer-link">Menu</a></li>
+            </div>
+            <div class="footer-batch">
+                <li class="footer-item"><a href="#" class="footer-link">Reserve</a></li>
+                <li class="footer-item"><a href="#" class="footer-link">Gallery</a></li>
+            </div>
+        </div>
+        <h2 class="creator-tag">Made By <a class="creator-tag-span" href="https://github.com/nana-ntim" target="_blank">NY</a></h2>
     </footer>
+    <!-- End Of Footer -->
 
 </body>
 </html>
