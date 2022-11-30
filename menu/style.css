@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@300;400&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+/*
+
+font-family: 'Krona One', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Space Grotesk', sans-serif;
+
+First BreakPoint: 1250px
+Second Breakpoint: 1050px;
+
+ */
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root{
+    --general-color: #fff;
+}
+
+body{
+    background-color: #121212;
+}
+
+.navbar-section{
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    z-index: 5;
+}
+
+.logo{
+    color: var(--general-color);
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 400;
+    margin-left: 2.5rem;
+    margin-top: 1rem;
+}
+
+.logo a{
+    color: white;
+}
+
+.logo-lighter{
+    font-weight: 200;
+    font-size: 1rem;
+    letter-spacing: 0.04rem;
+    display: block;
+}
+
+.nav-items{
+    margin-top: 1rem;
+    color: var(--general-color);
+    font-weight: 600;
+    font-size: 0.85rem;
+    letter-spacing: 0.035rem;
+    width: 18rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-item a{
+    color: var(--general-color);
+}
+
+.nav-item a:hover{
+    opacity: 0.7;
+    transition: all 0.3s ease-in;
+}
+
+.insta{
+    width: 2rem;
+    height: 2rem;
+    margin-top: 1rem;
+    margin-right: 2.5rem;
+}
+
+.hamburger-menu{
+    width: 2rem;
+    height: 2rem;
+    margin-top: 1rem;
+    margin-right: 2.5rem;
+    display: none;
+}
+
+.coming-soon-section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 47.55rem;
+}
+
+.coming-soon{
+    color: var(--general-color);
+    font-family: 'Krona One', sans-serif;
+    font-size: 9rem;
+    text-align: center;
+}
+
+.coming-soon-span{
+    font-family: 'Krona One', sans-serif;
+    display: block;
+    color: #F3F3B0;
+}
+
+footer.footer{
+    height: 25rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+img.themixlogo{
+    width: 9rem;
+}
+
+.footer-item a{
+    font-weight: 300;
+    color: white;
+}
+
+.footer-item{
+    margin-bottom: 0.8rem;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.footer-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-batch{
+    margin: 1rem;
+    width: auto;
+}
+
+.creator-tag{
+    color: white;
+    font-weight: 200;
+}
+
+.creator-tag a{
+    font-weight: 600;
+    color: white;
+}
+
+
+@media (max-width: 1050px) {
+    .nav-items{
+        display: none;
+    }
+
+    .insta{
+        display: none;
+    }
+
+    .hamburger-menu{
+        display: inline;
+    }
+
+    .coming-soon{
+        font-size: 7rem;
+    }
+
+    img.themixlogo{
+        width: 6rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .coming-soon{
+        font-size: 4rem;
+    }
+
+    img.themixlogo{
+        width: 6rem;
+    }
+
+    footer.footer{
+        flex-direction: column; 
+    }
+}
