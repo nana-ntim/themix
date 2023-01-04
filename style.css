@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@300;400&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@300;400&family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 /*
 
@@ -12,33 +12,28 @@ Second Breakpoint: 1050px;
 
  */
 
+/* General Rules */
 *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     text-decoration: none;
     list-style: none;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Lexend', sans-serif;
 }
 
 :root{
     --general-color: #fff;
+    --general-font: 'Lexend', sans-serif;
 }
 
 body{
     background-color: #121212;
 }
+/* End of General Rules */
 
-.navbar-section{
-    height: 5rem;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: absolute;
-    z-index: 5;
-}
 
+/* Logo*/
 .logo{
     color: var(--general-color);
     font-size: 1.5rem;
@@ -46,6 +41,7 @@ body{
     font-weight: 400;
     margin-left: 2.5rem;
     margin-top: 1rem;
+    letter-spacing: 0.04rem;
 }
 
 .logo a{
@@ -55,8 +51,21 @@ body{
 .logo-lighter{
     font-weight: 200;
     font-size: 1rem;
-    letter-spacing: 0.04rem;
+    letter-spacing: 0.08rem;
     display: block;
+}
+/* End of Logo*/
+
+
+/* Navbar*/
+.navbar-section{
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    z-index: 1000;
 }
 
 .nav-items{
@@ -93,7 +102,10 @@ body{
     margin-right: 2.5rem;
     display: none;
 }
+/* End of Navbar*/
 
+
+/* Hero Section */
 .hero-section{
     height: 48.1rem;
 }
@@ -147,10 +159,9 @@ body{
 }
 
 .hero-button{
-    font-family: 'Space Grotesk', sans-serif;
-    font-weight: 700;
+    font-weight: 600;
     color: #242424;
-    padding: 1rem 1.5rem 1rem 1.5rem;
+    padding: 1rem 2.5rem 1rem 2.5rem;
     font-size: 1rem;
     border-radius: 0.3rem;
     background-color: beige;
@@ -162,6 +173,8 @@ body{
     color: #121212;
 }
 
+
+/* About Us */
 .about-us-section{
     display: flex;
     height: 48.1rem;
@@ -218,7 +231,10 @@ body{
     font-size: 1.5rem;
     line-height: 2rem;
 }
+/* End Of About Us */
 
+
+/* Meet The Team */
 .meet-the-team{
     width: 100%;
     color: var(--general-color);
@@ -291,10 +307,77 @@ body{
 .mobile-employee-container{
     display: none;
 }
+/* End Of Meet The Team */
+
+
+/* International */
+.inter{
+    width: 100%;
+    height: 50rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inter-container{
+    width: 100%;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img.inter-bg{
+    width: 85%;
+    height: 45rem;
+    object-fit: cover;
+    opacity: 0.5;
+}
+
+.inter-details{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #f5f5f5;
+}
+
+.inter-title{
+    font-size: 2.5rem;
+    letter-spacing: 0.04rem;
+}
+
+.inter-line{
+    width: 3rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    height: 0.2rem;
+    background-color: white;
+}
+
+.inter-description{
+    font-weight: 200;
+    text-align: center;
+    width: 35rem;
+    font-size: 1.5rem;
+}
+
+.inter-button{
+    font-weight: 600;
+    color: #242424;
+    padding: 1rem 2.5rem 1rem 2.5rem;
+    font-size: 1rem;
+    border-radius: 0.3rem;
+    background-color: #f5f5f5;
+    margin-top: 2rem;
+    border: none;
+    cursor: pointer;
+}
+/* End Of International */
 
 
 /* Footer Section */
-
 footer.footer{
     border-top: 1px solid white;
     height: 15rem;
@@ -338,6 +421,7 @@ img.themixlogo{
     font-weight: 600;
     color: white;
 }
+/* End Of Footer */
 
 /* End Of Footer Section */
 
@@ -483,6 +567,11 @@ img.themixlogo{
         line-height: 1.7rem;
     }
 
+    img.inter-bg{
+        width: 100%;
+        height: 100%;
+    }
+
     footer.footer{
         height: 25rem;
         flex-direction: column;
@@ -523,9 +612,16 @@ img.themixlogo{
         display: none;
     }
 
+    .meet-the-team{
+        height: 55rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     .mobile-employee-container{
         width: 100%;
-        height: 52rem;
+        height: 55rem;
         display: flex;
         justify-content:center;
         align-items:center;
@@ -537,7 +633,7 @@ img.themixlogo{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 23rem;
+        width: 21rem;
         text-align: center;
     }
 
@@ -589,12 +685,24 @@ img.themixlogo{
         margin-left: 2rem;
         margin-right: 2rem;
         margin-top: 1.5rem;
-        font-weight: 300;
+        font-weight: 100;
         font-size: 1.25rem;
         line-height: 1.7rem;
     }
 
-    
+    /* International Mobile */
+
+    .inter-title{
+        font-size: 2rem;
+        letter-spacing: 0.04rem;
+    }
+
+    .inter-description{
+        width: 20rem;
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+    }
+    /* End Of International */
 }
 
 @media (max-width: 500px) {
@@ -602,4 +710,3 @@ img.themixlogo{
         font-size: 3.5rem;
     }
 }
-
